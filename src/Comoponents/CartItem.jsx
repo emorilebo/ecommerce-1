@@ -21,7 +21,7 @@ const CartItem = ({ item }) => {
               {title}
             </Link>
 
-            {/* To delete a slected item */}
+            {/* To delete a selected item */}
             <div 
             onClick={() => removeFromCart(id)} 
             className="text-xl cursor-pointer">
@@ -33,7 +33,7 @@ const CartItem = ({ item }) => {
 
           <div className="flex gap-x-2 h-[36px] text-sm">
 
-          {/* decrease and increase amount of items in the cart */}
+          {/* decrease and increase the amount of items in the cart */}
           <div 
           className="flex flex-1 max-w-[100px] items-center h-full border font-medium">
 
@@ -59,12 +59,12 @@ const CartItem = ({ item }) => {
 
           {/* price per particular item */}
           <div className="flex-1 flex items-center justify-around">
-            $ {price}
+            N {price} //Naira
           </div>
 
           {/* total price per same item */}
           <div className="flex-1 flex justify-end items-center font-medium text-[#1b1c41]">
-            {`$ ${parseFloat(price * amount).toFixed(2)}`}
+            {`N ${parseFloat(price * amount).toFixed(2)}`}//Let's use naira instead
           </div>
           </div>
         </div>
